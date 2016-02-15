@@ -4,7 +4,7 @@ const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const clean = require('gulp-clean'); 
 
-gulp.task('default', () => {
+gulp.task('default', function(){
   return gulp.src('src/images/*')
     .pipe(imageResize({ 
         width : 1000
